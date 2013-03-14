@@ -11,11 +11,11 @@ Gem::Specification.new do |gem|
   gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   gem.files         = `git ls-files`.split("\n")
   gem.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
-  gem.name          = "active_model_serializers-matchers"
+  gem.name          = "active_model_serializers_matchers"
   gem.require_paths = ["lib"]
   gem.version       = ActiveModel::Serializers::Matchers::VERSION
 
-  gem.add_dependency "active_model_serializers", "~> 0.5.0"
+  gem.add_dependency "active_model_serializers", "~> 0.7.0"
   gem.add_dependency "rspec", "~> 2.0"
 
   gem.add_development_dependency "simplecov"
